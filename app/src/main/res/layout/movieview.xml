@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="2sp"
+    android:layout_margin="5sp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="12sp"
+        android:background="@color/white"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10sp"
+        app:cardBackgroundColor="#F2F1D3"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+      >
+            <TextView
+                android:id="@+id/Movie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movie:"
+                android:textStyle="italic"
+                android:layout_margin="5sp"
+                android:padding="3sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+                 <TextView
+                     android:id="@+id/moviename"
+                     android:layout_width="250sp"
+                     android:layout_height="wrap_content"
+                     android:textSize="20sp"
+                     android:text="The Redeemed and the Dominant: Fittest on Earth"
+                     android:layout_margin="5sp"
+
+                     app:layout_constraintStart_toEndOf="@id/Movie"
+                     app:layout_constraintTop_toTopOf="parent"
+                     android:textColor="@color/black"
+                     android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/Cast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cast:"
+                android:padding="3sp"
+                android:textStyle="italic"
+              android:layout_marginTop="10sp"
+                android:layout_marginStart="5sp"
+                app:layout_constraintTop_toBottomOf="@id/moviename"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/moviecast"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="KÃ´ji Yakusho|Masaharu Fukuyama|Shinnosuke Mitsushima"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+
+                android:layout_marginStart="5sp"
+                app:layout_constraintStart_toEndOf="@id/Cast"
+                app:layout_constraintTop_toTopOf="@id/Cast"
+                />
+
+
+            <TextView
+                android:id="@+id/Year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year:"
+                android:textStyle="italic"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="7sp"
+                android:padding="2sp"
+                app:layout_constraintTop_toBottomOf="@id/moviecast"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/movieyear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2020"
+                android:padding="2sp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="7sp"
+                app:layout_constraintTop_toBottomOf="@id/moviecast"
+                app:layout_constraintStart_toEndOf="@id/Year"
+                />
+
+
+            <TextView
+                android:id="@+id/Runtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Runtime:"
+                android:textStyle="italic"
+                android:padding="2sp"
+                android:layout_marginTop="10sp"
+                 android:layout_marginStart="45sp"
+                app:layout_constraintTop_toBottomOf="@id/moviecast"
+                app:layout_constraintEnd_toStartOf="@id/movietime"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/movietime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="119"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+               android:padding="2sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="7sp"
+                android:layout_marginEnd="7sp"
+                app:layout_constraintTop_toBottomOf="@id/moviecast"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                />
+
+            <ImageView
+                android:id="@+id/Favourite"
+                android:layout_width="30sp"
+                android:layout_height="40sp"
+                android:src="@drawable/baseline_favorite_border_24"
+                 app:layout_constraintTop_toBottomOf="@id/Runtime"
+                app:layout_constraintEnd_toStartOf="@id/delete"
+                android:layout_margin="7sp"
+                />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="30sp"
+                android:layout_height="40sp"
+                android:src="@drawable/baseline_delete_24"
+                app:layout_constraintTop_toBottomOf="@id/Runtime"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="7sp"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
